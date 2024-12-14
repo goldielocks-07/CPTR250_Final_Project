@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FOOTER links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/FOOTERSTYLE.css">
+
+    <!-- Navbar CSS -->
+     <link rel="stylesheet" href="../CSS/NAVSTYLE.css">
+
+     <!-- STYLE CSS -->
+      <link rel="stylesheet" href="../CSS/ABOUTSTYLE.css">
+
+     <!-- FONTS -->
+     <link href="https://fonts.cdnfonts.com/css/radio-canada-2" rel="stylesheet">
+     <link href="https://fonts.cdnfonts.com/css/familjen-grotesk" rel="stylesheet">
+     <link href="https://fonts.cdnfonts.com/css/keshiki" rel="stylesheet">
+                
+    <title>About</title>
+</head>
+
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#00000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../menu.html">Menu</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../login.html">LogIn</a></li>
+            </ul>
+            <ul>
+                <li><img src="../IMAGES/LOGO.png" alt="LOGO" class="logo"></li>
+                <li class="hideOnMobile"><a href="../index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="../menu.html">Menu</a></li>
+                <li class="hideOnMobile"><a href="../about.html">About</a></li>
+                <li class="hideOnMobile"><a href="../login.html">LogIn</a></li>
+                <li class="menubtn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#FF0000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="div1">
+            <div class="div2">
+                
+                <h1 class="about">About Ramen Naijiro</h1>
+    
+                <div class="paragraph">
+                    <p class="paragraph2">Ramen Naijiro: Authentic Japanese Street Ramen was started by Angelo Derek E. Limpo in 2018. It began as a small street ramen business, sharing the taste of real Japanese ramen with everyone. Through hard work and passion, Ramen Naijiro grew bigger and gained many loyal customers. Today, it is one of the most popular street ramen spots in the Philippines, loved for its delicious and authentic flavors.</p>
+    
+                </div>
+            </div>
+        </div>
+
+        <div class="ratings">
+
+            <h2>Rate Us!</h2>
+
+            <label for="name">Name:</label>
+            <input type="name" name="name" placeholder="Name" id="name">
+
+            <textarea name="description" placeholder="Describe your experience.." id="description"></textarea>
+
+
+            <button id="btn">Post</button>
+        </div>
+        
+            
+    </main>
+
+    
+      
+
+
+
+    <footer>
+        <p class="details">
+            Ramen Naijiro Robinsons Ilocos Norte | Phone: 0939-989-0494 | Email: naijiroilocos@gmail.com
+        </p>
+        <p class="details2">
+            &copy; RAMEN NAIJIRO. All Rights Reserved.
+        </p>
+    </footer>
+
+
+
+    <script>
+        const btn = document.querySelector("button");
+        const post = document.querySelector(".post");
+        const widget = document.querySelector(".star-widget");
+        const editBtn = document.querySelector(".edit");
+        btn.onclick = ()=>{
+          widget.style.display = "none";
+          post.style.display = "block";
+          editBtn.onclick = ()=>{
+            widget.style.display = "block";
+            post.style.display = "none";
+          }
+          return false;
+        }
+      </script>
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html>

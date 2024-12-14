@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FOOTER links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/FOOTERSTYLE.css">
+
+    <!-- Navbar CSS -->
+     <link rel="stylesheet" href="../CSS/NAVSTYLE.css">
+
+     <!-- STYLE CSS -->
+      <link rel="stylesheet" href="../CSS/MENUSTYLE.css">
+
+     <!-- FONTS -->
+     <link href="https://fonts.cdnfonts.com/css/radio-canada-2" rel="stylesheet">
+     <link href="https://fonts.cdnfonts.com/css/familjen-grotesk" rel="stylesheet">
+     <link href="https://fonts.cdnfonts.com/css/keshiki" rel="stylesheet">
+                
+    <title>Menu</title>
+</head>
+
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#00000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../menu.html">Menu</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../login.html">LogIn</a></li>
+            </ul>
+            <ul>
+                <li><img src="../IMAGES/LOGO.png" alt="LOGO" class="logo"></li>
+                <li class="hideOnMobile"><a href="../index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="../menu.html">Menu</a></li>
+                <li class="hideOnMobile"><a href="../about.html">About</a></li>
+                <li class="hideOnMobile"><a href="../login.html">LogIn</a></li>
+                <li class="menubtn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#FF0000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="menu">MENU</h1>
+        <div class="ramens">
+            <h1>Ramens</h1>
+            <div class="products">
+
+                <div class="item">
+                    <img src="../IMAGES/TONKOTSU.jpg" alt="">
+                    <div class="info">
+                        <h2>TONKOTSU</h2>
+                        <p class="ingredients">chasu pork ● kikurage ● leeks ● egg</p>
+                        <br>
+                        <p class="price">Regular ₱120 / Large ₱155</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../IMAGES/MISO-RAMEN.jpg" alt="">
+                    <div class="info">
+                        <h2>MISO RAMEN</h2>
+                        <p class="ingredients">miso ● chasu pork ● wakame seaweeds ● onion springs ● egg</p>
+                        <p class="price">Regular ₱150 / Large ₱185</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../IMAGES/SHOYU-RAMEN.jpg" alt="">
+                    <div class="info">
+                        <h2>SHOYU RAMEN</h2>
+                        <p class="ingredients">soy ● chasu pork ● beansprouts ● leeks ● egg</p>
+                        <p class="price">Regular ₱150 / Large ₱185</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../IMAGES/BLACK-GARLIC.jpg" alt="">
+                    <div class="info">
+                        <h2>BLACK GARLIC RAMEN</h2>
+                        <p class="ingredients">miso ● chasu pork ● wakame seaweeds ● onion springs ● egg</p>
+                        <p class="price">Regular ₱150 / Large ₱185</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../IMAGES/TANTANMEN.jpg" alt="">
+                    <div class="info">
+                        <h2>TANTANMEN</h2>
+                        <p class="ingredients">spicy ● chasu pork ● beansprouts ● seaweed strips ● sesame seeds ● egg</p>
+                        <p class="price">Regular ₱150 / Large ₱185</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../IMAGES/Naijiro-Red-Ramen.jpg" alt="">
+                    <div class="info">
+                        <h2>NAIJIRO RED RAMEN <i>(Special)</i></h2>
+                        <p class="ingredients">red spicy meatball ● chasu pork ● kikurage ● seaweed strips ● leeks ● onion spring ● sesame seeds ● egg</p>
+                        <p class="price">Large ₱220</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../IMAGES/Chicken-Butter-Ramen.jpg" alt="">
+                    <div class="info">
+                        <h2>CHICKEN BUTTER RAMEN <i>(Special)</i></h2>
+                        <p class="ingredients">crispy chicken fillet ● wakame seaweeds ● onion spring ● cheese ● egg</p>
+                        <p class="price">Large ₱210</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="order_now">
+                <p><a href="../login.html">ORDER NOW</a></p>
+            </div>
+
+        </div>
+
+        <div class="wagyu-rice_meals">
+            <h1>WAGYU AND RICE MEALS</h1>
+            <div class="products">
+
+                <div class="item">
+                    <img src="../IMAGES/wagyu-rice.jpg" alt="">
+                    <div class="info">
+                        <h2>WAGYU RICE</h2>
+                        <p class="price2">₱119</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../IMAGES/Wagyu-Stick.jpg" alt="">
+                    <div class="info">
+                        <h2>WAGYU STICK</h2>
+                        <p class="price2">₱99</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../IMAGES/Katsudon.jpg" alt="">
+                    <div class="info">
+                        <h2>KATSUDON</h2>
+                        <p class="price2">₱119</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../IMAGES/Cheezy-Katsudon.jpg" alt="">
+                    <div class="info">
+                        <h2>CHEEZY KATSUDON</h2>
+                        <p class="price2">₱139</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="order_now">
+                <p><a href="../login.html">ORDER NOW</a></p>
+            </div>
+
+        </div>
+
+        <div class="drinks">
+            <h1>DRINKS</h1>
+            <div class="products">
+
+                <div class="item">
+                    <img src="../IMAGES/BlueLemonade.jpg" alt="">
+                    <div class="info">
+                        <h2>BLUE LEMONADE</h2>
+                        <p class="price2">Regular ₱40 / Large ₱50</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../IMAGES/RedIcedTea.jpg" alt="">
+                    <div class="info">
+                        <h2>RED ICED TEA</h2>
+                        <p class="price2">Regular ₱40 / Large ₱50</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="order_now">
+                <p><a href="../login.html">ORDER NOW</a></p>
+            </div>
+        </div>
+
+        <div class="extras">
+            <h1>EXTRAS</h1>
+            <div class="products">
+
+                <div class="item">
+                    <img src="../IMAGES/CHASHU PORK.jpg" alt="">
+                    <div class="info">
+                        <h2>CHASU PORK</h2>
+                        <p class="price2">Regular ₱50 / Large ₱70</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../IMAGES/GYOZA.jpg" alt="">
+                    <div class="info">
+                        <h2>GYOZA</h2>
+                        <p class="price2">4PCS ₱85 / 6PCS ₱125</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../IMAGES/NOODLES.jpg" alt="">
+                    <div class="info">
+                        <h2>NOODLES</h2>
+                        <p class="price2">₱90</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../IMAGES/WAKAME.jpg" alt="">
+                    <div class="info">
+                        <h2>WAKAME</h2>
+                        <p class="price2">₱20</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../IMAGES/SALTED-SEAWEEDS-STRIP.jpg" alt="">
+                    <div class="info">
+                        <h2>SALTED SEAWEEDS STRIP</h2>
+                        <p class="price2">₱20</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../IMAGES/TAMAGO EGG.jpg" alt="">
+                    <div class="info">
+                        <h2>TAMAGO EGG</h2>
+                        <p class="price2">₱20</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../IMAGES/KIKURAGE.jpg" alt="">
+                    <div class="info">
+                        <h2>KIKURAGE</h2>
+                        <p class="price2">₱20</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="order_now">
+                <p><a href="../login.html">ORDER NOW</a></p>
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+    <footer>
+        <p class="details">
+            Ramen Naijiro Robinsons Ilocos Norte | Phone: 0939-989-0494 | Email: naijiroilocos@gmail.com
+        </p>
+        <p class="details2">
+            &copy; RAMEN NAIJIRO. All Rights Reserved.
+        </p>
+    </footer>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html>

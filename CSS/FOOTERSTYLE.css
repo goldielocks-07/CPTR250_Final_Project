@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: whitesmoke;
+    width: 100%;
+    margin-top: auto;
+    text-align: center;
+}
+
+.details {
+    font-family: 'Radio Canada', sans-serif;
+    font-size: 17px;
+    margin: 20px 10px;
+    
+}
+
+.details2 {
+    font-family: 'Radio Canada', sans-serif;
+    font-size: 17px;
+    margin: 20px 10px;
+}
+
+@media (max-width: 500px) {
+    .details {
+        font-size: 14px;
+        
+    }
+    
+    .details2 {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
